@@ -1,0 +1,39 @@
+.app-container {
+  width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: #aabbcc52;
+}
+
+.on-capture{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.on-preview{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Target smartphones */
+@media only screen and (max-width: 767px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .on-capture{
+    width: 100vw;
+    margin-top: 217px;
+  }
+  .on-preview{
+    width: 100vw;
+  }
+}

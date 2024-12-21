@@ -1,0 +1,12 @@
+
+  <div class="webcam-container">
+    <video class="img-fluid" #videoElement autoplay></video>
+    <canvas class="img-fluid" #canvasElement style="display: none;"></canvas>
+
+    <div class="controls">
+      <button class="button-50" (click)="takePhoto()" role="button" [disabled]="isRecording">Take Photo</button>
+      <button class="button-50" role="button" *ngIf="!isRecording" (click)="startRecording()">Record Video</button>
+      <button class="button-50" role="button" *ngIf="isRecording" (click)="stopRecording()">Stop Recording</button>
+    </div>
+    
+  </div>

@@ -1,0 +1,14 @@
+<div class="captured-container">
+  <div  *ngIf="capturedContent">
+    <div *ngIf="isVideo">
+      <video class="img-fluid" [src]="capturedContent" controls></video>
+    </div>
+    <div *ngIf="!isVideo">
+      <img class="img-fluid" [src]="capturedContent" alt="Captured Photo" />
+    </div>
+    <div class="controls">
+      <button class="button-50" (click)="downloadContent()" role="button">Download</button>
+    </div>
+  </div>
+  
+</div>

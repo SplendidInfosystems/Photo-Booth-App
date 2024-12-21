@@ -1,0 +1,10 @@
+<div class="app-container">
+    <div class="on-capture">
+        <app-webcam-preview (capture)="onCapture($event)"></app-webcam-preview>
+    </div>
+  
+    <div class="on-preview">
+        <app-captured-content [capturedContent]="capturedContent" [isVideo]="isVideo"></app-captured-content>
+    </div>
+  </div>
+  
